@@ -1,40 +1,54 @@
----
-tags:
-  - concept
-  - ai
-  - knowledge-management
-created: 2026-05-05
----
-
 # LLM Wiki
 
-## 定义
+## 概念
 
-LLM Wiki 是将大型语言模型与 Wiki 系统结合的知识管理方案。
+LLM Wiki 是一种结合 LLM (大语言模型) 和 Wiki 工具的知识管理方法。LLM 负责读取、拆解、建页、加双链，Wiki 工具（如 [[Obsidian]]）负责查看、审阅和图谱展示。
 
-## 核心思想
+## 核心价值
 
-让 AI 帮助你：
-1. **读取** - 原始资料存入 raw/
-2. **理解** - AI 分析内容
-3. **拆分** - 自动生成概念页、实体页
-4. **链接** - 创建双链关系
-5. **可视化** - Obsidian 中查看知识网络
+- **知识结构化**：LLM 将原始资料拆解为可复用的知识节点
+- **双链网络**：概念页之间形成网状关联
+- **MOC 导航**：主题地图提供理解路线图
+- **可追溯**：Source-first 原则，结论可溯源
 
-## 工作流
+## 工作流程
 
-```raw/ → Hermes 读取 → 自动拆分 → Obsidian 可视化```
+```
+放入一篇文章 → Hermes 读取 raw 原始资料
+→ Hermes 自动拆成概念页、实体页、MOC、双链
+→ Obsidian 中形成可视化知识网络
+```
 
-## 工具栈
+## 核心组成
 
-| 组件 | 工具 |
+| 目录 | 说明 |
 |------|------|
-| Agent | Hermes |
-| 本地笔记 | Obsidian |
-| 同步 | Git |
-| 部署 | GitHub Pages |
+| raw/ | 原始资料区，只能追加和读取 |
+| concepts/ | 概念页 |
+| entities/ | 实体页 |
+| moc/ | 主题地图 |
+| queries/ | 问答沉淀 |
+| comparisons/ | 比较页 |
+| drafts/ | 草稿 |
 
-## 相关
+## 核心原则
 
-- [[concept-zettelkasten|Zettelkasten]]
-- [[concept-hermes-agent|Hermes Agent]]
+- [[Zettelkasten]] - 原子化卡片
+- [[双链交叉引用]] - 知识互联
+- [[MOC]] - 主题地图导航
+- [[Source-first]] - 关键结论标注来源
+- 重要内容使用 `[[wikilink]]`
+
+## 相关工具
+
+- [[Obsidian]] - 主要查看工具
+- [[Logseq]] - 替代选择
+- [[Hermes]] - LLM Agent（用于拆解）
+
+## 状态
+
+`evergreen`
+
+## 来源
+
+LLM Wiki + Obsidian 教程 - 知野 (@knoYee_)

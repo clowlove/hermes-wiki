@@ -1,36 +1,46 @@
-# Hermes-Wiki
+# LLM Wiki Index
 
-基于 Zettelkasten 方法的个人知识管理系统，配合 LLM 和 Obsidian 使用。
+这是本 Wiki 的总入口。
 
-## 🎯 快速导航
+## 核心概念
 
-- [[moc-hermes-agent|AI Agents MOC]] - Hermes Agent 主题地图
-- [[concept-llm-wiki|LLM Wiki]] - LLM Wiki 概念
-- [[concept-zettelkasten|Zettelkasten]] - 卡片盒笔记法
+- [[RAG]] - 检索增强生成
+- [[Agent]] - AI Agent 基础
+- [[LLM]] - 大语言模型
+- [[双链交叉引用]] - 知识互联
+- [[MOC]] - 主题地图
+- [[Chunking]] - 文档分块
+- [[Zettelkasten]] - 卡片盒笔记法
+- [[Source-first]] - 溯源原则
 
-## 📁 目录说明
+## 实体页
 
-| 目录 | 用途 |
-|------|------|
-| `raw/` | 原始资料（不修改） |
-| `concepts/` | 概念页面 |
-| `entities/` | 实体页面 |
-| `moc/` | 主题地图 |
-| `queries/` | 问答 |
-| `comparisons/` | 对比分析 |
+- [[Obsidian]] - 笔记工具
+- [[Logseq]] - 大纲笔记
+- [[Notion]] - All-in-one 工作区
+- [[GitHub]] - 代码托管
+- [[GitHub Copilot]] - AI 代码助手
 
-## 🔄 工作流
+## 主题地图
 
-```
-放入文章 → Hermes 读取 raw → 自动拆分 
-→ 生成概念页/实体页/MOC → Obsidian 双链网络
-```
+- [[AI Agent 地图]] - Agent 相关知识
+- [[知识管理地图]] - PKM 方法论
+- [[LLM 工具地图]] - LLM 生态工具
 
-## 📝 最近更新
+## 比较页
 
-- 2026-05-05: 初始化知识库，创建 SCHEMA.md
+- [[Obsidian vs Notion]] - 工具对比
+- [[本地 LLM vs 云端 LLM]] - 部署方案对比
 
-## 🔗 相关链接
+## 问答沉淀
 
-- GitHub: https://github.com/clowlove/hermes-wiki
-- Obsidian: https://obsidian.md/
+- [[如何选择 LLM]] - 模型选择指南
+- [[AI Agent 最佳实践]] - 开发指南
+
+## 最近更新
+
+- 2026-05-05：初始化 Wiki，创建基础结构
+- 2026-05-05：添加 RAG、Agent、MOC 等核心概念
+- 2026-05-05：添加 Obsidian、GitHub、Logseq 等实体
+- 2026-05-05：创建 AI Agent、知识管理、LLM 工具 MOC
+- 2026-05-05：添加工具对比和问答沉淀页
