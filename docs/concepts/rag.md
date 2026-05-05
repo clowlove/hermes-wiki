@@ -40,7 +40,7 @@ RAG 是一种结合检索系统和生成模型的 AI 架构。模型在生成回
 - 决定是否需要检索
 - 选择检索范围和策略
 - 多步推理和迭代优化
-- [→ Agentic RAG](agentic-rag.md)
+- **Agentic RAG** 模式：Agent 负责决策检索时机和策略
 
 ## 优化策略
 
@@ -51,7 +51,7 @@ RAG 是一种结合检索系统和生成模型的 AI 架构。模型在生成回
 
 ## 相关技术
 
-- [[Agentic RAG]] - 带 Agent 能力的 RAG
+- [[Agentic RAG]] - 结合 Agent 和 RAG
 - [[Chunking]] - 文档分块策略
 - [[Embedding]] - 向量化技术
 

@@ -1,0 +1,86 @@
+site_name: Hermes Wiki
+site_description: LLM Wiki + Obsidian 个人知识库
+site_url: https://clowlove.github.io/hermes-wiki/
+
+repo_url: https://github.com/clowlove/hermes-wiki
+repo_name: clowlove/hermes-wiki
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette: 
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 核心概念:
+    - RAG: concepts/rag.md
+    - Agent: concepts/agent.md
+    - Zettelkasten: concepts/zettelkasten.md
+    - LLM Wiki: concepts/llm-wiki.md
+    - MOC: concepts/moc.md
+    - 双链交叉引用: concepts/bidirectional-links.md
+    - Chunking: concepts/chunking.md
+  - 实体:
+    - Obsidian: entities/obsidian.md
+    - Logseq: entities/logseq.md
+    - Notion: entities/notion.md
+    - GitHub: entities/github.md
+    - GitHub Copilot: entities/github-copilot.md
+  - 主题地图:
+    - AI Agent 地图: moc/ai-agent-map.md
+    - 知识管理地图: moc/knowledge-management-map.md
+    - LLM 工具地图: moc/llm-tools-map.md
+  - 比较:
+    - Obsidian vs Notion: comparisons/obsidian-vs-notion.md
+    - 本地 LLM vs 云端 LLM: comparisons/local-llm-vs-cloud-llm.md
+  - 问答:
+    - 如何选择 LLM: queries/how-to-choose-llm.md
+    - AI Agent 最佳实践: queries/best-practices-for-ai-agents.md
+  - SCHEMA: SCHEMA.md
+  - 更新日志: log.md
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+        - zh

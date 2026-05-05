@@ -25,11 +25,7 @@ Hermes 可以通过 `gh` CLI 与 GitHub 交互：
 - 触发和监控 Actions
 - 代码审查
 
-## 相关实体
 
-- [→ GitHub Copilot](github-copilot.md)
-- [→ GitHub Actions](github-actions.md)
-- [→ Obsidian](obsidian-software.md) - 笔记工具
 
 ## 状态
 
